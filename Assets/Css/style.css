@@ -54,18 +54,6 @@ header {
     background: url('../Imgs/Banner01.png') no-repeat;
     background-size: 100% 100%;
 }
-@media screen and (min-width: 375px) {
-    .banner {
-        object-fit: contain;
-        object-position: 50% 50%;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .banner {
-        object-fit: contain;
-        object-position: 50% 50%;
-    }
-}
 .banner_content {
     width: 100%;
     float: left;
@@ -98,6 +86,33 @@ header {
     margin-right: 30px;
     margin-top: -67px;
 }
+@media screen and (max-width: 768px) {
+    .banner {
+        object-fit: contain;
+        object-position: 50% 50%;
+    }
+    .banner_caption .charming {
+        font-size: 2rem;
+    }
+    .banner_caption {
+        position: relative;
+        top: 9rem;
+    }
+    .banner_caption .txt {
+        font-size: 12px;
+    }
+    .bannerImg {
+        width: 100%;
+        margin-right: 0px;
+        margin-top: 12rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .banner {
+        object-fit: contain;
+        object-position: 50% 50%;
+    }
+}
 /********** Banner Css End **********/
 
 /********** Stay With US Start **********/
@@ -129,6 +144,18 @@ header {
 }
 .staywithusImg {
     width: 100%;
+}
+@media screen and (min-width: 275px) {
+    .stayWithUs {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .stayWithUs {
+        width: 100%;
+        padding: 0;
+    }
 }
 .prevBtn {
     width: 30px;
@@ -179,6 +206,19 @@ header {
     background-color: #7a7a7a;
     margin-top: 20px;
 }
+@media screen and (min-width: 275px) {
+    .westenVillDiv {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .westenVillDiv {
+        width: 100%;
+        padding: 0;
+    }
+}
+
 .BookYourStay {
     padding: 10px 20px;
     border: 0;
