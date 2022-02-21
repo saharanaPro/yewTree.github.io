@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alice', serif;
+}
+ul {list-style: none;}
+a {text-decoration: none;}
+body a:hover {text-decoration: none;}
+
+/********** Header Css Start **********/
+header {
+    width: 100%;
+    float: left;
+    height: 47px;
+    background-color: #f8f7f0;
+}
+.header_nav_menu_unorderlist {line-height: 20px;padding: 10px;}
+.header_nav_menu_unorderlist .header_nav_list {
+    display: inline-block;
+    padding: 0 15px;
+}
+.header_nav_link {
+    color: #7a7a7a
+}
+.header_nav_link:hover {
+    color: #7a7a7a
+}
+/* .BurgerBar {display: none;} */
+@media screen and (max-width: 912px) {
+    .navigation {
+        display: none;
+    }
+    .BurgerBar::before {
+        font-family: "FontAwesome";
+        content: "\f0c9";
+        display: block;
+        float: right;
+        position: relative;
+        top: 34%;
+    }
+}
+.logo {
+    max-width: 30%;
+}
+
+/********** Header Css End **********/
+
+/********** Banner Css Start **********/
+.banner {
+    width: 100%;
+    height: 700px;
+    float: left;
+    background: url('../Imgs/Banner01.png') no-repeat;
+    background-size: 100% 100%;
+}
+@media screen and (min-width: 375px) {
+    .banner {
+        object-fit: contain;
+        object-position: 50% 50%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .banner {
+        object-fit: contain;
+        object-position: 50% 50%;
+    }
+}
+.banner_content {
+    width: 100%;
+    float: left;
+}
+.banner_caption {
+    color: white;
+    width: 100%; 
+    /* padding-left: 10em; */
+    position: relative;
+    top: 11rem;   
+}
+.banner_caption .charming {
+    font-size: 4rem;
+    line-height: 1;
+}
+.banner_caption .txt {
+    font-size: 15px;
+}
+.banner_caption::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* .banner_caption .bannerImg, .txt {
+    
+} */
+.bannerImg {
+    width: 70%;
+    float: right;
+    margin-right: 30px;
+    margin-top: -67px;
+}
+/********** Banner Css End **********/
+
+/********** Stay With US Start **********/
+.stayWithUs {
+    width: 100%;
+    float: left;
+}
+.stayWithUs .text {
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+}
+.stayWithUs .text:nth-of-type(1n+2)::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 1px;
+    background-color: #7a7a7a;
+    margin-top: 20px;
+}
+.stayWithUs .paraTxt {
+    font-size: 16px;
+    color: #7a7a7a;
+    line-height: 1.7;
+}
+.stayWith_roomsImg {
+    width: 100%;
+    position: relative;
+}
+.staywithusImg {
+    width: 100%;
+}
+.prevBtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0%, -70%);
+    left: 0;
+}
+.nextBtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(0%, -70%);
+    right: -1px;
+}
+.prevBtn, 
+.nextBtn {
+    border: 0;
+    background: rgba(0,0,0,0.3);
+    color: white;
+}
+/********** Stay With US End **********/
+
+/********** Westen Village css Start **********/
+
+.westenVillage {
+    width: 100%;
+    float: left;
+    background: url('../Imgs/westenVillImg.png');
+}
+.westenVillage  .westenVillageImg {
+    width: 100%;
+}
+.westenVillage .text1 {
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+}
+.westenVillage .text1:nth-of-type(1n+2)::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 1px;
+    background-color: #7a7a7a;
+    margin-top: 20px;
+}
+.BookYourStay {
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/********** Westen Village css End **********/
+
+/********** Inspiring Reviews Start **********/
+.InspiringReviews {
+    width: 100%;
+    float: left;
+    background-color: #f8f7f0;
+}
+.InspiringReviews .text {
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+}
+.InspiringReviews .text:nth-of-type(1n+2)::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 1px;
+    background-color: #7a7a7a;
+    margin-top: 20px;
+}
+.ourGests {
+    width: 100%;
+}
+@media  screen and (min-width: 275px) {
+    .ourGests {
+        padding-right: 0;
+    }
+}
+@media  screen and (min-width: 1200px) {
+    .ourGests {
+        padding-left: 100px;
+    }
+}
+
+.InspiringReviewImg {
+    width: 100%;
+}
+/********** Inspiring Reviews End **********/
+
+
+/********** Footer Css Start **********/
+footer {
+    width: 100%;
+    float: left;
+    background-color: #fff;
+}
+.contact_us_heading { padding: 10px 0;}
+ul.foo-menu .foo-list {
+    display: block;
+    padding: 6px 0;
+}
+ul.foo-menu .foo-list .foo-link {
+    color: #7a7a7a;
+}
+.foo-social-media-icon {
+    display: inline-table;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.foo-social-media-icon .fa {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+}
+.horizontal_line {
+    margin-top: 4.4rem;
+}
+.foo-txt-link {
+    display: block;
+    float: right;
+    padding: 0 6px;
+    margin-top: 5rem;
+
+}
+.foo-txt-link > a {color: #7a7a7a; font-size: 13px;}
+.foo-txt-link > a:hover {color: #7a7a7a;}
+
+/********** Footer Css End **********/
